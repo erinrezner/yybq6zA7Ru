@@ -1,0 +1,1 @@
+<?php wp_redirect( home_url()."/?p=6", 301 ); exit; ?>

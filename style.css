@@ -1,0 +1,17 @@
+/*
+Theme Name:         SmartyPants Design
+Theme URI:          https://www.smartypantsdesign.ca/wp-themes/SmartyPants-Design/info.json
+Description:        It's our own theme
+Author:             SmartyPants Design
+Author URI:         http://www.smartypantsdesign.ca/
+Version:            1
+Text Domain:        SmartyPants-Design
+Tested up to:       4.6
+*/
+/* Defaults */
+@import url('css/wpcore.css');
+@import url('css/skeleton.css');
+@import url('css/layout.css');
+@import url('css/alignments.css');
+/* Hide WP Stats Smiley */
+img#wpstats {display:none !important;}

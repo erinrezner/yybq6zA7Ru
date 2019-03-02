@@ -1,0 +1,112 @@
+#featuredimage {
+	display:block;
+	margin:0 auto;
+	padding:0;
+	position:relative;
+	width:100%;
+}
+#featuredimage img {
+	width:100%;
+}
+#mainbody {
+	display:block;
+	margin:0 auto;
+	padding:0;
+	position:relative;
+	width:100%;
+}
+#mainfooter {
+	display:block;
+	margin:0 auto;
+	padding:0;
+	position:relative;
+	width:100%;
+}
+#mainheader {
+	display:block;
+	margin:0 auto;
+	padding:0;
+	position:relative;
+	width:100%;
+}
+#mainheader #headercolumns #headercolumn1 {
+	overflow:hidden;
+	width:40%;
+}
+#mainheader #headercolumns #headercolumn2 {
+	overflow:hidden;
+	width:60%;
+}
+#mainheader #headercolumns .headercolumn {
+	float:left;
+	margin:0;
+	padding:0;
+}
+#newscolumns #newscolumn1 {
+	overflow:hidden;
+	width:15%;
+}
+#newscolumns #newscolumn2 {
+	overflow:hidden;
+	width:85%;
+}
+#newscolumns .newscolumn {
+	float:left;
+	margin:0;
+	padding:0;
+}
+#stickypost {
+	display:block;
+	margin:0 auto;
+	padding:0;
+	position:relative;
+	width:100%;
+}
+#stickypost img {
+	width:100%;
+}
+#stickypostcolumns #stickypostcolumn1 {
+	float:left;
+	overflow:hidden;
+	width:30%;
+}
+#stickypostcolumns #stickypostcolumn2 {
+	float:right;
+	overflow:hidden;
+	width:70%;
+}
+#stickypostcolumns .stickypostcolumn {
+	margin:0;
+	padding:0;
+}
+.innercontainer {
+	margin:0;
+	padding:0;
+	position:relative;
+	width:100%;
+}
+.postcomments {
+	display:block;
+	margin:0 auto;
+	padding:0;
+	position:relative;
+	width:100%;
+}
+aside {
+	display:block;
+	float:right;
+	margin:0;
+	overflow:hidden;
+	width:33%;
+}
+body {
+	margin:0;
+	padding:0;
+}
+main {
+	display:block;
+	float:left;
+	margin:0;
+	overflow:hidden;
+	width:66%;
+}
