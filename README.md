@@ -1,2 +1,0 @@
-# SPD
-SmartyPants Design
