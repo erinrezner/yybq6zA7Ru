@@ -33,22 +33,23 @@ function remove_thefeeds()
   remove_theme_support( 'automatic-feed-links' ); //remove feed links in head
 }
 add_action( 'after_setup_theme', 'remove_thefeeds', 100 );
-// No Self Pings
-function no_self_ping( &$links ) {
-	$home = get_option( 'home' );
-	foreach ( $links as $l => $link )
-		if ( 0 === strpos( $link, $home ) )
-			unset($links[$l]);
+// No Self Pings - ERROR 500
+//function no_self_ping( &$links ) {
+//	$home = get_option( 'home' );
+//	foreach ( $links as $l => $link )
+//		if ( 0 === strpos( $link, $home ) )
+//			unset($links[$l]);
+//}
+//add_action( 'pre_ping', 'no_self_ping' );
+//disables WYSIWYG editor everywhere
+add_filter('user_can_richedit' , create_function('' , 'return false;') , 50);
+// Disable WYSIWYG for wp-client
+add_filter('user_can_richedit', 'disable_wyswyg_for_custom_post_type');
+function disable_wyswyg_for_custom_post_type( $default ){
+  global $post;
+  if( $post->post_type === 'portalhub') return false;
+  return $default;
 }
-add_action( 'pre_ping', 'no_self_ping' );
-//disables WYSIWYG editor
-function spd_user_can_richedit($c) {
-global $post_type;
-if ('page' == $post_type)
-return false;
-return $c;
-}
-add_filter( 'user_can_richedit', 'spd_user_can_richedit');
 //Register Menu(s)
 function register_my_menus()
 {
